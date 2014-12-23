@@ -11,9 +11,9 @@ DoArms = 1;  // Set to non-zero to draw the outer bracket support arms, 0 to dra
 Show = 0;  // Set to non-zero to show bearings
 
 // Spool dimensions
-SpoolCnt = 11;  // Number of spool sizes
-SpoolWid = [85,81,77,73,69,65,61,57,53,49,45];  // Width of filament spool the first one must be the biggest, and the last one the smallest.
-SpoolSpace = 1;  // Extra space on each side of the spool
+SpoolCnt = 14;  // Number of spool sizes
+SpoolWid = [97,93,89,85,81,77,73,69,65,61,57,53,49,45];  // Width of filament spool the first one must be the biggest, and the last one the smallest.
+SpoolSpace = 10;  // Extra space on each side of the spool
 
 // Mounting Latch dimensions
 LatchWid = 45;  // Width of latching section
@@ -90,9 +90,9 @@ module Arm(Invert = 0)
 					cube([OutBrkHgt,SlotWidth+(2*SlotClear),SlotDepth+1]);  // Outer bracket support
 
 		// Holes
-		translate([OutBrkHgt/2,ArmWid/4,-1])
+		translate([OutBrkHgt/2,(ArmWid/4)-8,-1])
 			cylinder(ArmThk+2,OutBrkHgt/4,OutBrkHgt/4,$fn=36);
-		translate([OutBrkHgt/2,ArmWid/2.2,-1])
+		translate([OutBrkHgt/2,(ArmWid/2.2)-8,-1])
 			cylinder(ArmThk+2,OutBrkHgt/4,OutBrkHgt/4,$fn=36);
 //		translate([OutBrkHgt/2,ArmWid/1.5,-1])
 //			cylinder(ArmThk+2,OutBrkHgt/4,OutBrkHgt/4,$fn=36);
