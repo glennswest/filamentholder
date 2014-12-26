@@ -42,8 +42,8 @@ ArmWid = (2 * SplShdThk) + (2 * OutBrkThk) + InBrkThk + SpoolWid[0] + SpoolSpace
 ArmThk = 3;  // Thickness of outer bracket arms
 
 // Screw hole sizes
-ScrewDia = 1.8; // Diameter of screw hole
-ScrewClear = 2.3; // Diameter of screw clearance hole
+ScrewDia = 3.0; // Diameter of screw hole
+ScrewClear = 3.2; // Diameter of screw clearance hole
 
 
 	translate([-80,-50,0])
